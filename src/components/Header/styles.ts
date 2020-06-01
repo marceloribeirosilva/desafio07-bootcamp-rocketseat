@@ -29,6 +29,10 @@ export const Container = styled.div<ContainerProps>`
 
         &:hover {
           opacity: 0.6;
+          padding-bottom: 10px;
+          border-style: solid;
+          border-width: 0 0 2px 0;
+          border-color: #ff872c;
         }
       }
     }
