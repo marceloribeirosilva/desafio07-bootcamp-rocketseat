@@ -8,7 +8,8 @@ import api from '../../services/api';
 
 import Header from '../../components/Header';
 
-import { formatValue, formatDate } from '../../utils/formatValue';
+import formatValue from '../../utils/formatValue';
+import formatDateJSON from '../../utils/formatDateJSON';
 
 import { Container, CardContainer, Card, TableContainer } from './styles';
 
@@ -93,7 +94,7 @@ const Dashboard: React.FC = () => {
                     {formatValue(transaction.value)}
                   </td>
                   <td>{transaction.category.title}</td>
-                  <td>{formatDate(transaction.created_at)}</td>
+                  <td>{formatDateJSON(transaction.created_at)}</td>
                 </tr>
               ))}
             </tbody>
